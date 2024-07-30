@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+		<title>Encriptador</title>
+        <link rel="icon" href="ATmini.ico">
+	</head>
+	<body>
+        <header>
+            <img src="img-textencryptor.png" alt="text encryptor">
+        </header>
+
+        <div class="base-container">
+            <div class="input_area">
+                <textarea name="texto-insertado" id="texto-insertado" placeholder="Ingresar texto"></textarea>
+
+                <label for="text-in" class="texto-info"><img src="icon-exc.png"> Las mayúsculas y los acentos serán modificados al encriptar.</label>
+                
+                <div class="button-container">
+                <button class="button" id="encriptar_btn">Encriptar</button>
+                <button class="button" id="desencriptar_btn">Desencriptar</button>
+                </div>
+            </div>
+             
+            <div class="output">
+                <div class="text-out" id="text-out">
+                    <textarea name="out-cod" id="out-cod"></textarea>
+                    <button class="button" id="copy_btn">Copiar</button>
+                </div>
+                 <div class="text-out-placeholder" id="text-out-placeholder">
+                    <img id="img-oops" src="oops.png" alt="image">
+                    <h2>No se encontró ningún mensaje</h2>
+                    <p>Ingresa el texto que deseas encriptar.</p>
+                </div>
+            </div>
+            
+            <div class="copy_container" id="copy_btn">
+                <div class="copy_message">
+                    <p>¡Texto copiado!</p>
+                </div>
+            </div>
+        </div>
+	
+    <footer>
+        <p>Desarrollado con &#128150 por <a class="github" href="https://hasaleah.github.io/portafolio/"> Hassaleah  </a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
